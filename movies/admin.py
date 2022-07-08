@@ -60,9 +60,12 @@ class MovieAdmin(admin.ModelAdmin):
         # (None, {
         #     "fields": (("budget", "fees_in_usa", "fess_in_world"),)
         # }),
-        # ("Options", {
-        #     "fields": (("url", "draft"),)
-        # }),
+        ("IDs", {
+            "fields": (("torrent_id", "youtube_id", "kinopoisk_id"),)
+        }),
+        ("Options", {
+            "fields": (("url", "draft"),)
+        }),
     )
 
     def get_image(self, obj):
