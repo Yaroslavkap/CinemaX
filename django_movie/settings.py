@@ -149,6 +149,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8080",
     "http://127.0.0.1:8000"
+    # "http://localhost:3000",
+    # "http://127.0.0.1:3000"
 ]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
@@ -280,7 +282,7 @@ SIMPLE_JWT = {
 # smtp
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'Cinemaxxxbot@gmail.com'
-EMAIL_HOST_PASSWORD = 'CinozZz666'
-EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_HOST_USER = 'cinemaxxxbot@mail.ru'
+EMAIL_HOST_PASSWORD = 'V2mQ28rmBgae34Pkuhg9'
+EMAIL_PORT = 993
