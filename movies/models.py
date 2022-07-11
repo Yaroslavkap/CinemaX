@@ -43,8 +43,8 @@ class Movie(models.Model):
     #world_premiere = models.DateField("Примьера в мире", default=date.today)
 
     torrent_id = models.TextField("Торрент", default='')
-    youtube_id = models.CharField("Ютуб", default='', max_length=200)
-    kinopoisk_id = models.CharField("Кинопоиск", default='', max_length=200)
+    youtube_id = models.TextField("Ютуб", default='')
+    kinopoisk_id = models.TextField("Кинопоиск", default='')
 
     category = models.ForeignKey(
         Category, verbose_name="Категория", on_delete=models.SET_NULL, null=True
