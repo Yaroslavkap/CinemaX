@@ -1,6 +1,7 @@
 from django.db import models
 from rest_framework import generics, permissions, viewsets
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.permissions import IsAuthenticated
 
 from .models import Movie, Review
 from .serializers import (
@@ -15,6 +16,7 @@ from .service import get_client_ip, MovieFilter
 
 class MovieViewSet(viewsets.ReadOnlyModelViewSet):
     """Вывод списка фильмов"""
+    #permission_classes = [IsAuthenticated]
     filter_backends = (DjangoFilterBackend,)
     filterset_class = MovieFilter
 
